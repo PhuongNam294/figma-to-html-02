@@ -58,6 +58,12 @@ a {
     line-height: 1.67;
 }
 
+.control {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
 /* ===============================Header=========================== */
 .header {
     padding-top: 30px;
@@ -145,7 +151,6 @@ a {
 .hero__cta {
     margin-top: 38px;
     display: flex;
-
     align-items: center;
     gap: 38px;
 }
@@ -186,6 +191,7 @@ a {
 .service {
     padding: 170px 0;
 }
+
 
 .service__desc,
 .service__heading {
@@ -369,6 +375,133 @@ a {
     object-fit: cover;
 }
 
-.about-content__btn{
+.about-content__btn {
     margin-top: 38px;
+}
+
+/* ===============================Team=========================== */
+.team {
+    padding: 85px 0;
+}
+
+.team__top {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team__btn {
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__img {
+    padding-top: 28px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #EAF6FF;
+}
+
+.team-item__thumb {
+    /* lý do thêm block là tại vì ảnh có background phía sau, phần dưới ảnh không sát vào background -> tại vì img là thẻ inline */
+    display: block;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.team-item__heading {
+    margin-top: 12px;
+    color: #10375C;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #575F66;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+}
+
+.team__control {
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.control__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    color: white;
+    background-color: #2E80CE;
+    border-color: #2E80CE;
+}
+
+/* ===============================Install=========================== */
+.install {
+    padding: 180px 0;
+}
+
+.install__row {
+    height: 427px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #2E80CE;
+    position: relative;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.install__content {
+    width: 53%;
+}
+
+.install__heading {
+    color: white;
+    max-width: 489px;
+}
+
+.install__desc {
+    margin-top: 18px;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.install__cta {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
 }
